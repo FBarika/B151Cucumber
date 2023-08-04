@@ -1,3 +1,9 @@
+#Scenario'larda birden fazla url'e gitmek istediğimizde yada birden fazla ürün aratmak istediğimizde
+  #her step için yeniden method oluşturmak yerine gitmek istediğimiz url yada aratmak istediğimiz ürünü
+  #stepleri yazarken " " tırnak içene alırsak step definition class'ında parametreli bir method oluşturur
+  #ve bu methodu diğer url ve aratmak istediğimiz ürünler için direk feature file üzerinden değiştirip
+  #kullanabiliriz. Böylece tekrar tekrar her step için method oluşturmamış olururuz.Aşağıdaki örneklerdede
+  #bunu görebilirisiniz.
 Feature: US004 TechproEducation Arama Testi
 
 
