@@ -1,5 +1,5 @@
 Feature: US002 Amazon Urun Arama Testi
-  @iphone @techpro
+  @iphone
   Scenario: TC01 Amazonda iphone aramasi
     Given kullanici amazon sayfasina gider
     #Given genelde en basta kullaniliyor sagidaki digerleri rastgele kullanabiliriz.

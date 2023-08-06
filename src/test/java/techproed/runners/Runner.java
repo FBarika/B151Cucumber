@@ -9,10 +9,15 @@ Runner classi testNG deki .xml file kullanimindaki gibi istedigimiz senario lari
 parametresi ile raporlar alabiliriz.
  */
 @RunWith(Cucumber.class)//-->TestCalistirici notasyon
-@CucumberOptions(features = "src/test/resources/features",//features package -sag tik -copy path-copy Path content root
+@CucumberOptions(plugin = {"pretty",
+        "html:target/default-cucumber-reports.html",
+        "json:target/json-reports/cucumber.json",
+        "junit:target/xml-report/cucumber.xml"},
+        features = "src/test/resources/features",//features package -sag tik -copy path-copy Path content root
         glue = {"techproed/stepDefinition"},  // step definition package-sag tik -copy path-copy Path source root
-        tags = "@tech",   //Calistirmak istedigimiz scenario'nun üstüne bu tag'i koyarsak sadece o scenario calisir.
-        dryRun = false ) //-->true secersek scenario'lari kontrol eder, browser'i calistirmaz. False -->Normal calistirir.
+        tags = "@techpro",   //Calistirmak istedigimiz scenario'nun üstüne bu tag'i koyarsak sadece o scenario calisir.
+        dryRun = false,//-->true secersek scenario'lari kontrol eder, browser'i calistirmaz. False -->Normal calistirir.
+        monochrome=false) //--> false olursa consoldaki ciktilar renkli olur
 
 //@techpro or @iphone tags dan sonra böyle dersek techpro ve iphone calistirir.
 //@techpro and @iphone tag ina sahip olan TC01 i calistiracak.

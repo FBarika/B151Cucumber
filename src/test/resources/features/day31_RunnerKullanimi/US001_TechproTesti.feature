@@ -1,4 +1,4 @@
-@all
+
 Feature: US001 TechProEducation Sayfasi Testi
 
   Scenario: TC01 Sayfada Arama Yapar
@@ -23,5 +23,5 @@ Feature: US001 TechProEducation Sayfasi Testi
       Given kullanici techpro sayfasina gider
       Then arama kutusunda mobile aratir
       When cikan dropdown da mobile developer linkine tiklar
-      And sayfa basliginin Mobile cerdigini test eder.
+      And sayfa basliginin Mobile icerdigini test eder.
       And sayfayi kapatir
