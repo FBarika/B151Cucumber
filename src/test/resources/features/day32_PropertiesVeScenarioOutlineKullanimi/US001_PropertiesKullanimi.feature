@@ -3,10 +3,11 @@ Feature: US001 Google Sayfasi Testi
     Given kullanici "googleUrl" sayfasina gitti
 
 
+    @volvo
     Scenario: Arama Kutusunda volvo aratir
       Then kullanici google arama kutusunda "volvo" aratir
       And kullanici 3 saniye bekler
-      And google sayfasinda basligin "volvo" icerdigini test eder
+      And google sayfasinda basligin "ford" icerdigini test eder
       And sayfayi kapatir
 
       #then and yerine * da kullanabiliyoruz.

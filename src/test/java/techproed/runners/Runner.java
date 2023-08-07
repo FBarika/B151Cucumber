@@ -15,7 +15,7 @@ parametresi ile raporlar alabiliriz.
         "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",//features package -sag tik -copy path-copy Path content root
         glue = {"techproed/stepDefinition"},  // step definition package-sag tik -copy path-copy Path source root
-        tags = "@techpro",   //Calistirmak istedigimiz scenario'nun üstüne bu tag'i koyarsak sadece o scenario calisir.
+        tags = "@arac2",   //Calistirmak istedigimiz scenario'nun üstüne bu tag'i koyarsak sadece o scenario calisir.
         dryRun = false,//-->true secersek scenario'lari kontrol eder, browser'i calistirmaz. False -->Normal calistirir.
         monochrome=false) //--> false olursa consoldaki ciktilar renkli olur
 
