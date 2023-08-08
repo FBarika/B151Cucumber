@@ -19,9 +19,9 @@ public class GoogleStepDefinition {
     public void kullaniciSayfasinaGitti(String url) {
 
         Driver.getDriver().get(ConfigReader.getProperty(url));
-       // ReusableMethods.scroll(googlePage.cerez);
-      //  ReusableMethods.bekle(2);
-       // googlePage.cerez.click();
+        ReusableMethods.scroll(googlePage.cerez);
+        ReusableMethods.bekle(2);
+        googlePage.cerez.click();
 
 
     }
